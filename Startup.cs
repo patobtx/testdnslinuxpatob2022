@@ -40,7 +40,7 @@ namespace testdnslinuxpatob2022
             }
             catch (Exception z)
             {
-                System.Threading.Thread.Sleep(50000);
+                System.Threading.Thread.Sleep(20000);
             }
               //  return true;
 

@@ -31,17 +31,19 @@ namespace testdnslinuxpatob2022
        // TestDns();
         private void TestDns()
         {
-            try
+           // try
             {
                 var client = new HttpClient();
                 var endpoints = new[] { "https://google.com/", "https://youtube.com/" };
                 var tasks = endpoints.Select(endpoint => Task.Run(async () => await client.GetAsync(endpoint)));
                 Task.WhenAll(tasks).GetAwaiter().GetResult();
             }
-            catch (Exception z)
+         /*   catch (Exception z)
             {
                 System.Threading.Thread.Sleep(20000);
             }
+            
+            */
               //  return true;
 
            // return false;
